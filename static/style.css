@@ -1,0 +1,48 @@
+/* Base styles */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 10%;
+    background-color: #f8f9fa; /* subtle gray background */
+    color: #222; /* dark text */
+    margin: 0;
+}
+
+/* Container */
+.container {
+    display: inline-block;
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1 {
+    color: #000;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}

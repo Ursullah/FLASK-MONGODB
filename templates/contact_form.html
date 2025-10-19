@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='contact_form.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Enter Contact Details</h2>
+    <form method="POST">
+      <input type="text" name="mobile" placeholder="Mobile number" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="address" placeholder="Address" required>
+      <input type="text" name="reg_number" placeholder="Registration number" required>
+      <button type="submit">Save Contact</button>
+    </form>
+
+    <p><a href="{{ url_for('search') }}">Search Contact</a></p>
+  </div>
+</body>
+</html>

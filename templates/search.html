@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Contact</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='search.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Search Contact</h2>
+    <form method="POST">
+      <input type="text" name="reg_number" placeholder="Enter registration number" required>
+      <button type="submit">Search</button>
+    </form>
+
+    {% if contact %}
+      <div class="result">
+        <h3>Contact Found:</h3>
+        <p><strong>Mobile:</strong> {{ contact.mobile }}</p>
+        <p><strong>Email:</strong> {{ contact.email }}</p>
+        <p><strong>Address:</strong> {{ contact.address }}</p>
+        <p><strong>Reg Number:</strong> {{ contact.reg_number }}</p>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
